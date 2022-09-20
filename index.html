@@ -52,10 +52,8 @@
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
       input.addEventListener('keypress', function(e){
-        if(e.code==='Enter'){
-          let val = document.getElementById('todo-input').value;
+        let val = document.getElementById('todo-input').value;
           fnClickHandler(val);
-        }
       });
     </script>
   </body>
